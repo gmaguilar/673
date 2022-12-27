@@ -1,12 +1,32 @@
 <resources>
+
+    <!-- Strings related to app or activity-->
     <string name="app_name">673</string>
-    <!-- Strings related to login -->
+    <string name="home">"Rosa de los Vientos 673"</string>
+    <string name="login">Login</string>
+    <string name="signin">Register</string>
+
+    <!-- Strings related to login or sign in-->
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
+    <string name="prompt_name">Name</string>
+    <string name="prompt_surname">Surname</string>
+    <string name="text_form">Formulary</string>
+    <string name="text_email">Email</string>
+    <string name="text_password">Password</string>
+    <string name="text_name">Name</string>
+    <string name="text_surname">Surname</string>
+
+    <!-- Strings related to buttons-->
+    <string name="action_logn_in">Log in</string>
+    <string name="action_sign_in">Register</string>
+    <string name="action_clean_form">Clean</string>
+
+
+    <!-- Strings related to advise-->
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+
+
 </resources>

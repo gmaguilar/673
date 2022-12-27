@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SignIn.SignIn"
+    android:background="@color/background_base">
+
+    <TextView
+        android:id="@+id/textFormRegistry"
+        android:layout_width="317dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/text_form"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/text_name_form"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_name_form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_name"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.187"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@string/text_name" />
+
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="247dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="@string/prompt_name"
+        android:inputType="textPersonName"
+        android:text="@string/prompt_name"
+        android:textColor="@color/white"
+        android:textColorHint="#F8BBD0"
+        app:layout_constraintBottom_toTopOf="@+id/text_surname_form"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_surname_form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_surname"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.197"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="247dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="20dp"
+        android:autofillHints="surname"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/prompt_surname"
+        android:textColor="@color/white"
+        android:textColorHint="#F8BBD0"
+        app:layout_constraintBottom_toTopOf="@+id/text_email_form"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_email_form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_email"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmailAddress2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.186"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress2"
+        android:layout_width="247dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="28dp"
+        android:autofillHints="email"
+        android:ems="10"
+        android:hint="@string/text_email"
+        android:inputType="textEmailAddress"
+        android:text="@string/prompt_email"
+        android:textColor="@color/white"
+        android:textColorHint="#F8BBD0"
+        app:layout_constraintBottom_toTopOf="@+id/text_pass_form"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_pass_form"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_password"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@string/text_password" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword2"
+        android:layout_width="247dp"
+        android:layout_height="67dp"
+        android:layout_marginBottom="48dp"
+        android:autofillHints="@string/prompt_password"
+        android:ems="10"
+        android:hint="@string/text_password"
+        android:inputType="textPassword"
+        android:text="@string/text_password"
+        android:textColor="@color/white"
+        android:textColorHint="#F8BBD0"
+        app:layout_constraintBottom_toTopOf="@+id/bCleanForm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bSignInForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="72dp"
+        android:text="@string/action_sign_in"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bCleanForm"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bCleanForm"
+        android:layout_width="88dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="72dp"
+        android:text="@string/action_clean_form"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
